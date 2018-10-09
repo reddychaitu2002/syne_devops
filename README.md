@@ -30,5 +30,15 @@ ec2-user:~/environment/syne_devops (master) $ history
    19  git checkout master
    20  git merge idea1
    21  history
-   
+   22  git add *
+   23  git commit -m "changes in Master"
+   24  git checkout idea1
+   25  git add *
+   26  git commit -m "changes in idea1"
+   27  git checkout master
+   28  git merge idea1
+   29  git add *
+   30  git commit -m "merged"
+   31  git remote -v
+   32  history
    

@@ -41,4 +41,35 @@ ec2-user:~/environment/syne_devops (master) $ history
    30  git commit -m "merged"
    31  git remote -v
    32  history
+   33  cls
+   34  git branch -v --all
+   35  git push --set-upstream master: dev1.0  --wrong
+   36  git push --set-upstream master: dev-1.0  --wrong
+   37  git push --set-upstream origin master: dev-1.0  --wrong
+   38  git push --set-upstream origin master:dev-1.0 --correct
+   39  git commit -m "local change"
+   40  git push --set-upstream origin master:dev-1.0
+   41  git pull origin dev-1.0
+   42  git commit -m "local change"
+   43  git add *
+   44  git commit -m "local change"
+   45  git pull origin dev-1.0
+   46  git push --set-upstream origin master:dev-1.0
+   47  git add *
+   48  git commit -m "local change"
+   49  git push --set-upstream origin master:dev-1.0
+   50  history
    
+   
+   
+   
+   ****************Jenkins****************
+   
+   1) List all the tools   (git, ssh, shell script)
+   2) Install the tool on Jenkins server
+   3) Configure the tool
+   4) Make sure tool can be invoked by Jenkins user
+   5) Install the plugins   (git, ssh)
+   6) Restart jenkins
+   7) Configure the plugins
+   8) use the plugin in the pipeline
